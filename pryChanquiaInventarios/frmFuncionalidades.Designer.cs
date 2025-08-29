@@ -46,8 +46,13 @@
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblStock = new System.Windows.Forms.Label();
+            this.tabGestion = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.mrcDatos.SuspendLayout();
             this.mrcBusqueda.SuspendLayout();
+            this.tabGestion.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mrcDatos
@@ -65,7 +70,7 @@
             this.mrcDatos.Controls.Add(this.lblDescripcion);
             this.mrcDatos.Controls.Add(this.lblPrecio);
             this.mrcDatos.Controls.Add(this.lblStock);
-            this.mrcDatos.Location = new System.Drawing.Point(30, 38);
+            this.mrcDatos.Location = new System.Drawing.Point(19, 17);
             this.mrcDatos.Name = "mrcDatos";
             this.mrcDatos.Size = new System.Drawing.Size(540, 309);
             this.mrcDatos.TabIndex = 1;
@@ -227,18 +232,52 @@
             this.lblStock.TabIndex = 1;
             this.lblStock.Text = "STOCK";
             // 
+            // tabGestion
+            // 
+            this.tabGestion.Controls.Add(this.tabPage1);
+            this.tabGestion.Controls.Add(this.tabPage2);
+            this.tabGestion.Location = new System.Drawing.Point(30, 27);
+            this.tabGestion.Name = "tabGestion";
+            this.tabGestion.SelectedIndex = 0;
+            this.tabGestion.Size = new System.Drawing.Size(598, 376);
+            this.tabGestion.TabIndex = 2;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.mrcDatos);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(590, 350);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(192, 74);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // frmFuncionalidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 387);
-            this.Controls.Add(this.mrcDatos);
+            this.ClientSize = new System.Drawing.Size(660, 415);
+            this.Controls.Add(this.tabGestion);
             this.Name = "frmFuncionalidades";
             this.Text = "Gestion de Inventario";
+            this.Load += new System.EventHandler(this.frmFuncionalidades_Load);
             this.mrcDatos.ResumeLayout(false);
             this.mrcDatos.PerformLayout();
             this.mrcBusqueda.ResumeLayout(false);
             this.mrcBusqueda.PerformLayout();
+            this.tabGestion.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -263,5 +302,8 @@
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblStock;
+        private System.Windows.Forms.TabControl tabGestion;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
