@@ -54,7 +54,7 @@ namespace pryChanquiaInventarios
             comandoBaseDatos = new OleDbCommand();
             comandoBaseDatos.Connection = coneccionBaseDatos;
             comandoBaseDatos.CommandType =System.Data.CommandType.Text;
-            comandoBaseDatos.CommandText = "SELECT Nombre FROM Productos ";
+            comandoBaseDatos.CommandText = "SELECT categoria_de_producto FROM Productos ";
             lectorDataReader = comandoBaseDatos.ExecuteReader();
 
             while (lectorDataReader.Read())
@@ -64,20 +64,16 @@ namespace pryChanquiaInventarios
 
         }
 
-        public void AgregarProducto()
-        {
-            comandoBaseDatos = new OleDbCommand();
-            comandoBaseDatos.Connection = coneccionBaseDatos;
-            comandoBaseDatos.CommandType = System.Data.CommandType.Text;
-            comandoBaseDatos.CommandText = "INSERT INTO Productos (Id1, categoria_de_producto, Nombre, observaciones) VALUES ( 233, 1, 'ASUS', 'revisión de stock'); ";
-            lectorDataReader = comandoBaseDatos.ExecuteReader();
+        //public void AgregarProducto(Int32 id, Int32 cat,string nom, string obs )
+        //{
+        //    comandoBaseDatos = new OleDbCommand();
+        //    comandoBaseDatos.Connection = coneccionBaseDatos;
+        //    comandoBaseDatos.CommandType = System.Data.CommandType.Text;
+        //    comandoBaseDatos.CommandText = "INSERT INTO Productos (Id1, categoria_de_producto, Nombre, observaciones)" + VALUES ( {{id}}, cat, nom, obs);
+        //    lectorDataReader = comandoBaseDatos.ExecuteReader();
 
-            //while (lectorDataReader.Read())
-            //{
-            //    categoria.Items.Add(lectorDataReader[0]);
-            //}
-
-        }
+          
+        //}
 
     }
 }
