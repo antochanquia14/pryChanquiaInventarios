@@ -24,6 +24,8 @@ namespace pryChanquiaInventarios
         //comando
         //SqlCommand comandoBaseDatos;
         OleDbCommand comandoBaseDatos;
+        OleDbDataReader lectorDataReader;
+       
 
         public string nombreBaseDeDatos;
 
@@ -44,6 +46,21 @@ namespace pryChanquiaInventarios
             {
                 MessageBox.Show("Tiene un errorcito - " + error.Message);
             }     
+
+        }
+
+        public void CargarCategorias(ComboBox categoria)
+        {
+            comandoBaseDatos = new OleDbCommand();
+            comandoBaseDatos.Connection = coneccionBaseDatos;
+            comandoBaseDatos.CommandType =System.Data.CommandType.Text;
+            comandoBaseDatos.CommandText = "SELECT Nombre FROM Productos ";
+            lectorDataReader = comandoBaseDatos.ExecuteReader();
+
+            while (lectorDataReader.Read())
+            {
+                categoria.Items.Add(lectorDataReader[0]);
+            }
 
         }
 
