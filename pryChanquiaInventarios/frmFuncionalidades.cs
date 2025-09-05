@@ -19,8 +19,12 @@ namespace pryChanquiaInventarios
 
         private void frmFuncionalidades_Load(object sender, EventArgs e)
         {
+
             clsConexionBD clsConexionBD = new clsConexionBD();
             clsConexionBD.ConectarBD();
+            clsConexionBD.CargarCategorias(cmbCategoría);
+
+
         }
     }
 }

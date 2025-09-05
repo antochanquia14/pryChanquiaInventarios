@@ -46,13 +46,8 @@
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblStock = new System.Windows.Forms.Label();
-            this.tabGestion = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.mrcDatos.SuspendLayout();
             this.mrcBusqueda.SuspendLayout();
-            this.tabGestion.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mrcDatos
@@ -79,7 +74,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(346, 247);
+            this.btnEliminar.Location = new System.Drawing.Point(413, 251);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(111, 40);
             this.btnEliminar.TabIndex = 4;
@@ -93,9 +88,10 @@
             this.mrcBusqueda.Controls.Add(this.btnBuscar);
             this.mrcBusqueda.Controls.Add(this.txtCódigo);
             this.mrcBusqueda.Controls.Add(this.lblCodigo);
-            this.mrcBusqueda.Location = new System.Drawing.Point(32, 16);
+            this.mrcBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcBusqueda.Location = new System.Drawing.Point(13, 16);
             this.mrcBusqueda.Name = "mrcBusqueda";
-            this.mrcBusqueda.Size = new System.Drawing.Size(457, 79);
+            this.mrcBusqueda.Size = new System.Drawing.Size(511, 79);
             this.mrcBusqueda.TabIndex = 12;
             this.mrcBusqueda.TabStop = false;
             // 
@@ -104,14 +100,14 @@
             this.cmbCategoría.FormattingEnabled = true;
             this.cmbCategoría.Location = new System.Drawing.Point(138, 11);
             this.cmbCategoría.Name = "cmbCategoría";
-            this.cmbCategoría.Size = new System.Drawing.Size(141, 21);
+            this.cmbCategoría.Size = new System.Drawing.Size(233, 26);
             this.cmbCategoría.TabIndex = 11;
             // 
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(17, 9);
+            this.lblCategoria.Location = new System.Drawing.Point(6, 16);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(96, 20);
             this.lblCategoria.TabIndex = 10;
@@ -120,7 +116,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(320, 26);
+            this.btnBuscar.Location = new System.Drawing.Point(394, 33);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(111, 40);
             this.btnBuscar.TabIndex = 2;
@@ -129,16 +125,16 @@
             // 
             // txtCódigo
             // 
-            this.txtCódigo.Location = new System.Drawing.Point(138, 46);
+            this.txtCódigo.Location = new System.Drawing.Point(138, 45);
             this.txtCódigo.Name = "txtCódigo";
-            this.txtCódigo.Size = new System.Drawing.Size(141, 20);
+            this.txtCódigo.Size = new System.Drawing.Size(128, 24);
             this.txtCódigo.TabIndex = 8;
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(18, 46);
+            this.lblCodigo.Location = new System.Drawing.Point(6, 53);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(76, 20);
             this.lblCodigo.TabIndex = 0;
@@ -147,7 +143,7 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(229, 247);
+            this.btnModificar.Location = new System.Drawing.Point(296, 251);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(111, 40);
             this.btnModificar.TabIndex = 3;
@@ -157,7 +153,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(112, 247);
+            this.btnAgregar.Location = new System.Drawing.Point(179, 251);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(111, 40);
             this.btnAgregar.TabIndex = 1;
@@ -166,37 +162,41 @@
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(427, 207);
+            this.txtStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStock.Location = new System.Drawing.Point(413, 207);
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(97, 20);
+            this.txtStock.Size = new System.Drawing.Size(105, 24);
             this.txtStock.TabIndex = 9;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(130, 207);
+            this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecio.Location = new System.Drawing.Point(137, 207);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(210, 20);
+            this.txtPrecio.Size = new System.Drawing.Size(121, 24);
             this.txtPrecio.TabIndex = 7;
             // 
             // txtDescripción
             // 
-            this.txtDescripción.Location = new System.Drawing.Point(130, 154);
+            this.txtDescripción.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripción.Location = new System.Drawing.Point(137, 158);
             this.txtDescripción.Name = "txtDescripción";
-            this.txtDescripción.Size = new System.Drawing.Size(394, 20);
+            this.txtDescripción.Size = new System.Drawing.Size(381, 24);
             this.txtDescripción.TabIndex = 6;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(130, 105);
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(137, 107);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(394, 20);
+            this.txtNombre.Size = new System.Drawing.Size(381, 24);
             this.txtNombre.TabIndex = 5;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(9, 105);
+            this.lblNombre.Location = new System.Drawing.Point(19, 107);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(74, 20);
             this.lblNombre.TabIndex = 4;
@@ -206,7 +206,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(9, 154);
+            this.lblDescripcion.Location = new System.Drawing.Point(19, 158);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(111, 20);
             this.lblDescripcion.TabIndex = 3;
@@ -216,7 +216,7 @@
             // 
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(9, 207);
+            this.lblPrecio.Location = new System.Drawing.Point(19, 209);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(65, 20);
             this.lblPrecio.TabIndex = 2;
@@ -225,50 +225,19 @@
             // lblStock
             // 
             this.lblStock.AutoSize = true;
-            this.lblStock.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStock.Location = new System.Drawing.Point(346, 207);
+            this.lblStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStock.Location = new System.Drawing.Point(329, 207);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(55, 20);
+            this.lblStock.Size = new System.Drawing.Size(60, 18);
             this.lblStock.TabIndex = 1;
             this.lblStock.Text = "STOCK";
-            // 
-            // tabGestion
-            // 
-            this.tabGestion.Controls.Add(this.tabPage1);
-            this.tabGestion.Controls.Add(this.tabPage2);
-            this.tabGestion.Location = new System.Drawing.Point(30, 27);
-            this.tabGestion.Name = "tabGestion";
-            this.tabGestion.SelectedIndex = 0;
-            this.tabGestion.Size = new System.Drawing.Size(598, 376);
-            this.tabGestion.TabIndex = 2;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.mrcDatos);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(590, 350);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // frmFuncionalidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(660, 415);
-            this.Controls.Add(this.tabGestion);
+            this.ClientSize = new System.Drawing.Size(615, 387);
+            this.Controls.Add(this.mrcDatos);
             this.Name = "frmFuncionalidades";
             this.Text = "Gestion de Inventario";
             this.Load += new System.EventHandler(this.frmFuncionalidades_Load);
@@ -276,8 +245,6 @@
             this.mrcDatos.PerformLayout();
             this.mrcBusqueda.ResumeLayout(false);
             this.mrcBusqueda.PerformLayout();
-            this.tabGestion.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -302,8 +269,5 @@
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblStock;
-        private System.Windows.Forms.TabControl tabGestion;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
     }
 }
