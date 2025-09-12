@@ -240,7 +240,7 @@
             this.Controls.Add(this.mrcDatos);
             this.Name = "frmFuncionalidades";
             this.Text = "Gestion de Inventario";
-
+            this.Load += new System.EventHandler(this.frmFuncionalidades_Load);
             this.mrcDatos.ResumeLayout(false);
             this.mrcDatos.PerformLayout();
             this.mrcBusqueda.ResumeLayout(false);
