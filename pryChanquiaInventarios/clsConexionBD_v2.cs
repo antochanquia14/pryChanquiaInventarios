@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Sql;
 using System.Data.SqlClient;
 
+
 //para conexion de ACcess
 using System.Data.OleDb;
 
@@ -63,7 +64,34 @@ namespace pryChanquiaInventarios
             }
 
         }
+        public void cargarDatos(Int32 txtCodigo, int cbxCategoria, string txtNombre, string txtObservaciones)
+        {
+            try
+            {
+                // Creo el comando y le asigno la conexión
+                comandoBaseDatos = new OleDbCommand();
+                comandoBaseDatos.Connection = coneccionBaseDatos;
+                comandoBaseDatos.CommandText =
+                    "INSERT INTO Productos (Id1, categoria_de_producto, NOMBRE, observaciones) " +
+                    $"VALUES ({txtCodigo}, {cbxCategoria}, {txtNombre}, {txtObservaciones})";
 
+                // Agrego parámetros
+                comandoBaseDatos.Parameters.AddWithValue("ID", txtCodigo);
+                comandoBaseDatos.Parameters.AddWithValue("Categoria", cbxCategoria);
+                comandoBaseDatos.Parameters.AddWithValue("Nombre", txtNombre);
+                comandoBaseDatos.Parameters.AddWithValue("Observaciones", txtObservaciones);
+
+                // Ejecuto la consulta
+                int filasAfectadas = comandoBaseDatos.ExecuteNonQuery();
+
+                MessageBox.Show($"Filas insertadas: {filasAfectadas}");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al insertar: " + ex.Message);
+            }
+        }
         //public void AgregarProducto(Int32 id, Int32 cat,string nom, string obs )
         //{
         //    comandoBaseDatos = new OleDbCommand();
@@ -72,7 +100,7 @@ namespace pryChanquiaInventarios
         //    comandoBaseDatos.CommandText = "INSERT INTO Productos (Id1, categoria_de_producto, Nombre, observaciones)" + VALUES ( {{id}}, cat, nom, obs);
         //    lectorDataReader = comandoBaseDatos.ExecuteReader();
 
-          
+
         //}
 
     }

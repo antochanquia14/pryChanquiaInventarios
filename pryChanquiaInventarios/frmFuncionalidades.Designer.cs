@@ -34,7 +34,7 @@
             this.cmbCategoría = new System.Windows.Forms.ComboBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtCódigo = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -86,7 +86,7 @@
             this.mrcBusqueda.Controls.Add(this.cmbCategoría);
             this.mrcBusqueda.Controls.Add(this.lblCategoria);
             this.mrcBusqueda.Controls.Add(this.btnBuscar);
-            this.mrcBusqueda.Controls.Add(this.txtCódigo);
+            this.mrcBusqueda.Controls.Add(this.txtCodigo);
             this.mrcBusqueda.Controls.Add(this.lblCodigo);
             this.mrcBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcBusqueda.Location = new System.Drawing.Point(13, 16);
@@ -123,12 +123,12 @@
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
-            // txtCódigo
+            // txtCodigo
             // 
-            this.txtCódigo.Location = new System.Drawing.Point(138, 45);
-            this.txtCódigo.Name = "txtCódigo";
-            this.txtCódigo.Size = new System.Drawing.Size(128, 24);
-            this.txtCódigo.TabIndex = 8;
+            this.txtCodigo.Location = new System.Drawing.Point(138, 45);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(128, 24);
+            this.txtCodigo.TabIndex = 8;
             // 
             // lblCodigo
             // 
@@ -159,6 +159,7 @@
             this.btnAgregar.TabIndex = 1;
             this.btnAgregar.Text = "AGREGAR";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtStock
             // 
@@ -257,7 +258,7 @@
         private System.Windows.Forms.ComboBox cmbCategoría;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox txtCódigo;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnAgregar;
