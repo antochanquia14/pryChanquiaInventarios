@@ -20,15 +20,7 @@ namespace pryChanquiaInventarios
             InitializeComponent();
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-        }
-
+      
         private void frmFuncionalidades_Load(object sender, EventArgs e)
         {
            
@@ -386,5 +378,9 @@ namespace pryChanquiaInventarios
             }
         }
 
+        private void tbBusquedas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
